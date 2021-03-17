@@ -1,0 +1,30 @@
+body{
+
+    margin:0;
+    width:
+}
+
+#headerBar{
+
+    height:8px;
+    background-color: #252627;
+}
+
+
+#header{
+
+    display:flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #888;
+}
+
+#news{
+
+    display:flex;
+}
+
+news1 p{
+    
+    text-align:center;
+}
