@@ -1,0 +1,34 @@
+
+/* 
+czcionka: arial
+kolor obramowania odnośnika #819791; 
+szerokość strony: 460px
+odstęp między zdjęciami w galerii: 10px;
+nagłówek (About Layer 51): #cbd6df, brak pogrubienia
+tekst podstawowy: 13px, wysokość wiersz 32px, wyrównanie: justify
+kolor obramowania odnośnika: #819791
+stopka: 11px, #444
+*/
+
+
+body{
+    background-color: #ccc;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+
+}
+#dd{
+    background-color: blueviolet;
+    background-image:url(https://picsum.photos/600/400);
+    width:1200px;
+    height:900px;
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-size:cover;
+}
+
+
+
+
