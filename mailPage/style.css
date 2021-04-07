@@ -1,0 +1,109 @@
+body{
+    display:flex;
+    justify-content:center;
+    margin:0;
+
+}
+
+#box{
+    width:500px;
+    height:900px;
+    background-color: rgb(59, 59, 59);
+    
+}
+
+.cont{
+    width:100%;
+}
+
+
+
+/* -----  menu -----*/
+
+
+
+#menu{
+    height:5%;
+    background-color: #181715;
+    border-bottom:3px solid rgb(172, 155, 152);
+    text-align:right;
+    
+}
+
+#menu p{
+    color:mistyrose;
+    font-size:25px;
+    margin:0;
+    font-family:Verdana;    
+    margin-right:12px;  
+    margin-top:5px;
+}
+
+/* #menu:hover */
+
+
+
+/* ----- mail list -----*/
+
+
+
+#list{
+    height:40%;
+    overflow: auto;
+   
+}
+
+.single{
+    
+    width:100%;
+    height:25%;
+    border-bottom:1px solid gray;
+    background-color: mistyrose;
+}
+
+.single p{
+    margin:0;
+    font-family:Tahoma;
+}
+
+#headSingle{
+    font-size:20px;
+    text-decoration: underline;
+}
+
+#contSingle{
+    margin-left:12px;
+    font-size:16px;
+}
+
+
+
+/* ----- current mail ----- */
+
+
+
+#current{
+    height:55%;
+    background-color:#181715;
+}
+
+#current p{
+    color:mistyrose;
+    margin:0;
+}
+
+#headCurrent{
+
+    font-family:Geneva;
+    font-size:40px;
+    border-top:3px solid rgb(172, 155, 152);
+    border-bottom:3px solid rgb(172, 155, 152);
+    text-align: center;
+    text-decoration: underline;
+}
+
+#contCurrent{
+
+    font-family:Tahoma;
+    padding:5px;
+}
