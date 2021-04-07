@@ -25,21 +25,54 @@ body{
 #menu{
     height:5%;
     background-color: #181715;
-    border-bottom:3px solid rgb(172, 155, 152);
+    border-bottom:9px solid rgb(172, 155, 152);
     text-align:right;
+    padding-top:10px;
     
 }
 
-#menu p{
+#titleMenu{
     color:mistyrose;
     font-size:25px;
     margin:0;
     font-family:Verdana;    
-    margin-right:12px;  
-    margin-top:5px;
+     
+    
 }
 
-/* #menu:hover */
+#hrefMenu{
+    display:none;
+    width:100%;
+    height:100px;
+    
+}
+
+.linkMenu{
+    margin-bottom:5px;
+    text-decoration: none;
+    color:mistyrose;
+    font-size:20px;
+    font-family:Tahoma;
+
+}
+
+.linkMenu:hover{
+    background-color:#3b3a37;
+}
+
+
+#menu:hover{
+    height:15%;
+}
+
+#menu:hover > #hrefMenu{
+    display:flex;
+    flex-direction: column;
+}
+
+#menu:hover > #titleMenu {
+    border-bottom:1px solid rgb(172, 155, 152);
+}
 
 
 
@@ -58,12 +91,14 @@ body{
     width:100%;
     height:25%;
     border-bottom:1px solid gray;
-    background-color: mistyrose;
+    background-color: #302e2a;
 }
 
 .single p{
     margin:0;
     font-family:Tahoma;
+    color:mistyrose;
+    
 }
 
 #headSingle{
@@ -96,7 +131,7 @@ body{
 
     font-family:Geneva;
     font-size:40px;
-    border-top:3px solid rgb(172, 155, 152);
+    border-top:9px solid rgb(172, 155, 152);
     border-bottom:3px solid rgb(172, 155, 152);
     text-align: center;
     text-decoration: underline;
@@ -107,3 +142,6 @@ body{
     font-family:Tahoma;
     padding:5px;
 }
+
+
+/* TODO: wysuwane menu ma nie przesuwać maili, tylko je zasłaniać */
