@@ -9,13 +9,7 @@ body{
     width:500px;
     height:900px;
     background-color: rgb(59, 59, 59);
-    display:grid;
-    grid-template-columns: [start] 100% [end];
-    grid-template-rows: 15%  40% 45%;
-    grid-template-areas:
-    "menu"
-    "list"
-    "current";
+    
 }
 
 .cont{
@@ -29,12 +23,11 @@ body{
 
 
 #menu{
-    
+    height:5%;
     background-color: #181715;
     border-bottom:9px solid rgb(172, 155, 152);
     text-align:right;
     padding-top:10px;
-    grid-area:menu;
     
 }
 
@@ -42,14 +35,12 @@ body{
     color:mistyrose;
     font-size:25px;
     margin:0;
-    margin-right:15px;
     font-family:Verdana;    
      
     
 }
 
 #hrefMenu{
-    
     display:none;
     width:100%;
     height:100px;
@@ -69,7 +60,10 @@ body{
     background-color:#3b3a37;
 }
 
-  
+
+#menu:hover{
+    height:15%;
+}
 
 #menu:hover > #hrefMenu{
     display:flex;
@@ -87,16 +81,15 @@ body{
 
 
 #list{
-    
+    height:40%;
     overflow: auto;
-    grid-area:list;
    
 }
 
 .single{
     
     width:100%;
-    height:200px;
+    height:25%;
     border-bottom:1px solid gray;
     background-color: #302e2a;
 }
@@ -110,7 +103,6 @@ body{
 
 #headSingle{
     font-size:20px;
-    margin-left:5px;
     text-decoration: underline;
 }
 
@@ -126,9 +118,8 @@ body{
 
 
 #current{
-    
+    height:55%;
     background-color:#181715;
-    grid-area:current;
 }
 
 #current p{
@@ -154,6 +145,3 @@ body{
 
 
 /* TODO: wysuwane menu ma nie przesuwać maili, tylko je zasłaniać */
-/* TODO: poprawić wygląd style992 */
-/* TODO: dodać więcej tych media query */
-/* 576, 992, 1200, 1400 */
