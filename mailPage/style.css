@@ -2,7 +2,7 @@ body{
     display:flex;
     justify-content:center;
     margin:0;
-
+    background-color: black;
 }
 
 #box{
@@ -16,6 +16,8 @@ body{
     "menu"
     "list"
     "current";
+    border-right:darkorchid 1px solid;
+    border-left:darkorchid 1px solid;
 }
 
 .cont{
@@ -35,6 +37,7 @@ body{
     text-align:right;
     padding-top:10px;
     grid-area:menu;
+    
     
 }
 
@@ -90,7 +93,7 @@ body{
     
     overflow: auto;
     grid-area:list;
-   
+    
 }
 
 .single{
@@ -99,6 +102,8 @@ body{
     height:200px;
     border-bottom:1px solid gray;
     background-color: #302e2a;
+    display:flex;
+    flex-wrap:wrap;
 }
 
 .single p{
@@ -108,14 +113,21 @@ body{
     
 }
 
+#imgSingle{
+    margin-left:15px;
+    margin-top:15px;
+}
+
 #headSingle{
     font-size:20px;
-    margin-left:5px;
+    margin-top:15px;
+    margin-left:10px;
     text-decoration: underline;
 }
 
 #contSingle{
-    margin-left:12px;
+    margin-top:-35px;
+    margin-left:15px;
     font-size:16px;
 }
 
@@ -154,6 +166,5 @@ body{
 
 
 /* TODO: wysuwane menu ma nie przesuwać maili, tylko je zasłaniać */
-/* TODO: poprawić wygląd style992 */
-/* TODO: dodać więcej tych media query */
-/* 576, 992, 1200, 1400 */
+/* TODO: niech strona dostosowywuje sie do urządzenia (viewport chyba?) */
+/* TODO: moze poprawic cos pod wzgledem wygladu wizualnie? */

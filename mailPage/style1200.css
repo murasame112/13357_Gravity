@@ -1,0 +1,14 @@
+#box{
+    width:1200px;
+    height:2160px;
+    
+    grid-template-columns: 15% 35% 50%;
+    grid-template-rows:  100%;
+    grid-template-areas:
+    "menu   list    current";
+}
+
+#current{
+
+    border-left:0;
+}

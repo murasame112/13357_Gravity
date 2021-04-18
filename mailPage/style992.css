@@ -2,10 +2,11 @@
     width:900px;
     height:1620px;
     
-    grid-template-columns: 15% 35% 50%;
-    grid-template-rows:  100%;
+    grid-template-columns: 30% 70%;
+    grid-template-rows:  30% 70%;
     grid-template-areas:
-    "menu   list    current";
+    "menu   list"
+    "menu current";
 }
 
 #list{
@@ -14,4 +15,9 @@
 
 #menu{
     border-bottom:0;
+    
+}
+
+#current{
+    border-left: 1px solid darkorchid;
 }
