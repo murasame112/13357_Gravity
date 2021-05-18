@@ -1,12 +1,18 @@
 body{
     display:flex;
-    flex-direction:row;
-    
+    flex-wrap:wrap;
+    align-items:flex-start;
     justify-content: center;
     align-items:center;
     
 }
 
+#space{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
 .box{
     width: 300px;
     height:300px;
@@ -19,6 +25,21 @@ body{
     margin-top:100px;
     
     
+}
+
+#btn{
+    margin-top:25px;
+    align-self:flex-end;
+    width:400px;
+    height:100px;
+    font-size:40px;
+    color:white;
+    background-color:red;
+}
+
+#btn:hover{
+    color:lightgray;
+    background-color: brown;
 }
 
 .front{

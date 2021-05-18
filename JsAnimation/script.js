@@ -41,9 +41,5 @@ box2.classList.add('back');
 setTimeout(function(){ 
     box1.classList.remove('back_again_rev');
     box2.classList.remove('front_again_rev'); }, 1001);
-
-
-
-
 })
 
