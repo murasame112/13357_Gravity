@@ -1,5 +1,7 @@
 body{
     display:flex;
+    flex-direction:row;
+    
     justify-content: center;
     align-items:center;
     
@@ -17,22 +19,64 @@ body{
     margin-top:100px;
     
     
-    
 }
 
 .front{
     
-    animation:trs_forward 2s linear 0s normal;
+    animation:trs_forward 1s linear 0s normal;
     z-index: 3;
     animation-fill-mode: forwards;
     
 }
 
 .back{
-    animation:trs_behind 2s linear 0s normal;
+    animation:trs_behind 1s linear 0s normal;
     z-index: -3;
     animation-fill-mode: forwards;
 }
+
+.front_rev{
+    
+    animation:trs_forward_rev 1s linear 0s normal;
+    z-index: 3;
+    animation-fill-mode: forwards;
+    
+}
+
+.back_rev{
+    animation:trs_behind_rev 1s linear 0s normal;
+    z-index: -3;
+    animation-fill-mode: forwards;
+}
+
+.front_again{
+    
+    animation:trs_forward_again 1s linear 0s normal;
+    z-index: 3;
+    animation-fill-mode: forwards;
+    
+}
+
+.back_again{
+    animation:trs_behind_again 1s linear 0s normal;
+    z-index: -3;
+    animation-fill-mode: forwards;
+}
+
+.front_again_rev{
+    
+    animation:trs_forward_again_rev 1s linear 0s normal;
+    z-index: 3;
+    animation-fill-mode: forwards;
+    
+}
+
+.back_again_rev{
+    animation:trs_behind_again_rev 1s linear 0s normal;
+    z-index: -3;
+    animation-fill-mode: forwards;
+}
+
 
 @keyframes trs_forward{
     0% {transform: translateX(0px) translateY(0px) translateZ(0px)} 
@@ -42,4 +86,34 @@ body{
 @keyframes trs_behind{
     0% {transform: translateX(0px) translateY(0px) translateZ(0px)}
     100% {transform: translateX(-40px) translateY(0px) translateZ(0px) scale(0.9)}  
+}
+
+@keyframes trs_forward_rev{
+    0% {transform: translateX(40px) translateY(0px) translateZ(0px) scale(1.1)}
+    100% {transform: translateX(0px) translateY(0px) translateZ(0px) scale(1)}  
+}
+
+@keyframes trs_behind_rev{
+    0% {transform: translateX(-40px) translateY(0px) translateZ(0px) scale(0.9)}
+    100%   {transform: translateX(0px) translateY(0px) translateZ(0px) scale(1)}
+}
+
+@keyframes trs_forward_again{
+    0% {transform: translateX(0px) translateY(0px) translateZ(0px)} 
+    100% {transform: translateX(-40px) translateY(0px) translateZ(0px) scale(1.1)} 
+}
+
+@keyframes trs_behind_again{
+    0% {transform: translateX(0px) translateY(0px) translateZ(0px)}
+    100% {transform: translateX(40px) translateY(0px) translateZ(0px) scale(0.9)}  
+}
+
+@keyframes trs_forward_again_rev{
+    0% {transform: translateX(-40px) translateY(0px) translateZ(0px) scale(1.1)}  
+    100% {transform: translateX(0px) translateY(0px) translateZ(0px) scale(1)}
+}
+
+@keyframes trs_behind_again_rev{
+    0% {transform: translateX(40px) translateY(0px) translateZ(0px) scale(0.9)}
+    100% {transform: translateX(0px) translateY(0px) translateZ(0px) scale(1)}
 }
