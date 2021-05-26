@@ -1,0 +1,101 @@
+/*http://make-lemonade.co/themes/selfy/index.html
+
+
+w wyzszych query dac wieksze height w #full
+
+don't use select for menu in low media query
+
+dots (:after) in about me, what i do, get in touch
+ */
+
+
+
+
+
+#full{
+    height:1575px;
+    margin:0;
+    width:600px;
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 60%;
+    
+}
+
+#box1{
+    background-image: url('box1_back.jpg');
+    background-repeat: no-repeat;
+
+    background-position: 50% 50% ;
+    background-size:cover;
+}
+
+#content{
+    width:100%;
+    height:100%;
+    padding:5px;
+    margin:5px;
+    
+    display:grid;
+    grid-template-columns: 10% 20% 30% 40%;
+    grid-template-rows:15% 80%;
+    grid-template-areas:
+    "logo . menu menu"
+    "text text text .";
+}
+
+#logo{
+    grid-area:logo;
+    
+}
+
+#menu{
+    grid-area:menu;
+    font-family: 'robotobold';
+    font-size: 20px;
+}
+
+#menu a{
+    text-decoration: none;
+    color:#2d3438;
+}
+
+#text{
+    grid-area:text;
+    
+}
+
+/* -------- part 2 -------- */
+
+#content2{
+    width:100%;
+    height:100%;
+    padding:5px;
+    margin:5px;
+    justify-content: center;
+    display:grid;
+    grid-gap: 20px;
+    grid-template-columns: 80%;
+    grid-template-rows: 30% 30% 30%;
+
+}
+
+#content2 div{
+    border: 1px solid red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: robotobold;
+    src: url(Roboto-Bold.ttf);
+  }
