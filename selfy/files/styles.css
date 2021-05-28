@@ -9,8 +9,9 @@ dots (:after) in about me, what i do, get in touch
  */
 
 
-
-
+ body{
+    margin:0;
+ }
 
 #full{
     height:1575px;
@@ -23,6 +24,7 @@ dots (:after) in about me, what i do, get in touch
 }
 
 #box1{
+    margin:0;
     background-image: url('box1_back.jpg');
     background-repeat: no-repeat;
 
@@ -37,33 +39,103 @@ dots (:after) in about me, what i do, get in touch
     margin:5px;
     
     display:grid;
-    grid-template-columns: 10% 20% 30% 40%;
+    grid-template-columns: 60% 5% 25%;
     grid-template-rows:15% 80%;
     grid-template-areas:
-    "logo . menu menu"
-    "text text text .";
+    "header header header "
+    "text text .";
+}
+
+#header{
+    grid-area:header;
+    display:grid;
+    grid-template-columns:30% 10% 60%;
+    grid-template-rows:100%;
+    grid-template-areas:
+    "logo . menu";
+    border-bottom:1px solid #cad2d7;
 }
 
 #logo{
     grid-area:logo;
-    
+   
 }
+
 
 #menu{
     grid-area:menu;
     font-family: 'robotobold';
     font-size: 20px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    
+}
+
+#menu .active{
+    background-color: #ffc000;
+    color: #fff;
+    
+}
+
+#menu a,  #text a{
+    text-decoration: none;
+    color:#2d3438;
+    font-family: 'robotobold';
+    font-weight: normal;
+    
 }
 
 #menu a{
-    text-decoration: none;
-    color:#2d3438;
+    padding: 0.3em 1.2em;
+    border-radius: 3px;
+    height:30px;
+}
+
+#text a{
+    padding:0px;
 }
 
 #text{
     grid-area:text;
+    margin-left:15px;
     
 }
+
+#text h1{
+    font-family:'robotoblack';
+    font-size: 72px; 
+    color: #fff;
+    font-weight: normal;
+    letter-spacing: -2px;
+}
+
+#text h3{
+    font-family: 'aleoitalic';
+    letter-spacing: 0;
+    color:#e2e2e2;
+    font-size: 28px;
+    margin-bottom:0px;
+}
+
+#text h5{
+    color: #fff;
+    margin-top:0px;
+    font-family: 'robotobold';
+    font-weight: normal;
+    font-size: 24px;
+}
+
+#text p{
+    word-wrap: break-word;
+    font-family: 'robotoregular';
+    font-size: 18px;
+    color: #fff;
+}
+
+
+
+
 
 /* -------- part 2 -------- */
 
@@ -98,4 +170,19 @@ dots (:after) in about me, what i do, get in touch
 @font-face {
     font-family: robotobold;
     src: url(Roboto-Bold.ttf);
-  }
+}
+
+@font-face {
+    font-family: robotoblack;
+    src: url(Roboto-Black.ttf);
+}
+
+@font-face{
+    font-family: aleoitalic;
+    src: url(Aleo-Italic.ttf);
+}
+
+@font-face {
+    font-family: robotoregular;
+    src: url(Roboto-Regular.ttf);
+}
