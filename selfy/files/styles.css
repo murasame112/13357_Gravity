@@ -78,7 +78,7 @@ dots (:after) in about me, what i do, get in touch
     
 }
 
-#menu a,  #text a{
+#menu a,  #text a, .small_art a{
     text-decoration: none;
     color:#2d3438;
     font-family: 'robotobold';
@@ -108,6 +108,7 @@ dots (:after) in about me, what i do, get in touch
     color: #fff;
     font-weight: normal;
     letter-spacing: -2px;
+    word-wrap: break-word;
 }
 
 #text h3{
@@ -116,6 +117,7 @@ dots (:after) in about me, what i do, get in touch
     color:#e2e2e2;
     font-size: 28px;
     margin-bottom:0px;
+    word-wrap: break-word;
 }
 
 #text h5{
@@ -123,6 +125,7 @@ dots (:after) in about me, what i do, get in touch
     margin-top:0px;
     font-family: 'robotobold';
     font-weight: normal;
+    word-wrap: break-word;
     font-size: 24px;
 }
 
@@ -152,20 +155,84 @@ dots (:after) in about me, what i do, get in touch
 
 }
 
-#content2 div{
-    border: 1px solid red;
+.small_art{
+    margin-bottom: 30px;
+}
+
+.small_art h2{
+    font-family: 'robotobold';
+    font-weight: normal;
+    font-size: 36px;
+    color: #2d3438;
+    margin-top:15px;
+    word-wrap: break-word;
+}
+
+.small_art p{
+    font-family: 'robotoregular';
+    font-size: 16px;
+    color: #656a6f;
+    word-wrap: break-word;
+}
+
+.small_art a{
+    
+    padding-top: 5px;
+    padding-bottom: 8px;
+    position: relative;
+    padding-left: 22px;
+}
+
+
+.small_art a::before{
+    content: "➝";
+    /* U+279D */
+
+    font-size: 16px;
+    left: 3px;
+    top: 6px;
+    position: absolute;
+    cursor: pointer;
+    color: #ffc000;
+}
+
+.small_art h2::after{
+    content: ".";
+    font-size: 56px;
+    position: relative;
+    padding-left: 3px;
+    color: #ffc000;
+    font-family: 'robotobold';
+    font-weight: normal;
+}
+
+
+/* -------- foooter -------- */
+
+
+#footer{
+    border-top: 1px solid #cad2d7;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    
+}
+
+#footer_top{
+    
+   
+}
+
+#footer_bottom{
+    
+  
 }
 
 
 
 
-
-
-
-
-
-
-
+/* -------- fonts -------- */
 
 @font-face {
     font-family: robotobold;
