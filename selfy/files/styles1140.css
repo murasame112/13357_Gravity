@@ -18,13 +18,24 @@
     margin-top:20px;
 }
 
+#logo img{
+    height:80%;
+}
+
 #header{
     margin-bottom:50px;
+    margin-top:10px;
     display:grid;
-    grid-template-columns:40% 10% 60%;
+    grid-template-columns:50% 60%;
     grid-template-rows:100%;
     grid-template-areas:
-    "logo . menu";
+    "logo menu";
+}
+
+#menu{
+    margin-left:-20px;
+    margin-right:-20px;
+    margin-top:25px;
 }
 
 #text{
@@ -63,4 +74,31 @@
 
 #footer_bottom{
     grid-area:footer_bottom;
+}
+
+/* -------- about -------- */
+
+#full_about{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center; 
+}
+
+#content_about{
+    width:60%;
+}
+
+#text_about{
+    grid-area:text;
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 35% 65%;
+    margin-top:5px;
+}
+
+#paragraphs_about{
+    display:grid;
+    grid-template-columns:50% 50%;
+    grid-template-rows:100%;
 }
