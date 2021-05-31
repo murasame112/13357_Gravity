@@ -197,3 +197,37 @@
     "text"
     "footer";
 }
+
+/* -------- contact -------- */
+
+#full_contact{
+    width:100%;
+    height:900px;
+    display:flex;
+    justify-content: center;
+    align-items:center; 
+}
+
+#content_contact{
+    width:60%;
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows:15% 75% 10%;
+    grid-template-areas:
+    "header "
+    "text"
+    "footer";
+}
+
+#text_contact{
+    display:grid;
+    grid-template-columns:60% 40%;
+    grid-template-rows:100%;
+    margin-bottom:20px;
+}
+
+#contact2{
+    border-top:0;
+    border-left:1px solid #cad2d7;
+    padding-left:10px;
+}
