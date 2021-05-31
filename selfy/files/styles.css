@@ -314,7 +314,7 @@ w wyzszych query dac wieksze height w #full
 
 #img_about img{
     width: 100%;
-    border: 3px solid white;
+    border: 5px solid white;
 }
 
 #text_about_lower h1{
@@ -353,6 +353,122 @@ w wyzszych query dac wieksze height w #full
     line-height:24px;
 
 }
+
+/* -------- gallery -------- */
+
+
+#full_gallery{
+    height:5600px;
+    /* 2900 */
+    margin:0;
+    width:600px;
+    
+    
+}
+
+
+#content_gallery{
+    
+    width:100%;
+    height:100%;
+    padding:5px;
+    margin:5px;
+        
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows:2% 95% 3%;
+    grid-template-areas:
+    "header "
+    "text"
+    "footer";
+    
+}
+
+
+#text_gallery{
+    grid-area:text;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    margin-top:5px;
+}
+
+.small_text_gallery{
+    display:flex;
+    
+    
+    flex-direction:column;
+}
+
+#text_gallery img{
+    width:100%;
+    border:5px solid white;
+    margin-top:15px;
+}
+
+#text_gallery div h2{
+    font-family:'robotobold';
+    font-size:36px;
+    font-weight: normal;
+    line-height: 100%;
+    color: #2d3438;
+    letter-spacing: -1px;
+}
+
+#text_gallery div h2::after{
+    content: ".";
+    font-size: 56px;
+    position: relative;
+    padding-left: 3px;
+    color: #ffc000;
+    font-family: 'robotobold';
+    font-weight: normal;
+}
+
+#text_gallery div .secondary_gallery{
+    color: #3c4a52;
+    font-family: 'aleoitalic';
+    font-size:24px;
+    line-height: 32px;
+    word-wrap: break-word;
+}
+
+#text_gallery div p{
+    font-family:'robotoregular';
+    font-size:16px;
+    line-height:24px;
+    color:#656a6f;
+    word-wrap: break-word;
+}
+
+#text_gallery div p a{
+    text-decoration: none;
+    padding-top:8px;
+    padding-bottom: 8px;
+    position: relative;
+    padding-left: 22px;
+    color:#3c4a52;
+    font-family:'robotobold';
+    font-size:16px;
+
+}
+
+#text_gallery div p a:hover{
+    color:#ffc000;
+}
+
+#text_gallery div p a::before{
+    content: "➝";
+    /* U+279D */
+
+    font-size: 16px;
+    left: 3px;
+    top: 6px;
+    position: absolute;
+    cursor: pointer;
+    color: #ffc000;
+}
+
 
 /* -------- fonts -------- */
 
