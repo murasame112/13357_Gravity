@@ -1,6 +1,7 @@
 /*http://make-lemonade.co/themes/selfy/index.html
 
 popoprawiać fonty miedzy queries
+post.h
 w wyzszych query dac wieksze height w #full
 
  */
@@ -615,7 +616,7 @@ w wyzszych query dac wieksze height w #full
     font-weight: normal;
 }
 
-#contact2 h2{
+#contact2 h2, #contact1 h2{
     font-family:'robotobold';
     font-size:36px;
     font-weight: normal;
@@ -624,7 +625,7 @@ w wyzszych query dac wieksze height w #full
     letter-spacing: -1px;
 }
 
-#contact2 h2::after{
+#contact2 h2::after, #contact1 h2::after{
     content: ".";
     font-size: 36px;
     position: relative;
@@ -635,7 +636,7 @@ w wyzszych query dac wieksze height w #full
 }
 
 
-#text_contact div .secondary_gallery{
+#text_contact div .secondary_gallery, #text_post div .secondary_gallery{
     color: #3c4a52;
     font-family: 'aleoitalic';
     font-size:24px;
@@ -643,7 +644,7 @@ w wyzszych query dac wieksze height w #full
     word-wrap: break-word;
 }
 
-#text_contact div p{
+#text_contact div p, #text_post div p{
     font-family:'robotoregular';
     font-size:16px;
     line-height:24px;
@@ -651,7 +652,7 @@ w wyzszych query dac wieksze height w #full
     word-wrap: break-word;
 }
 
-#text_contact div p a{
+#text_contact div p a, #text_post div p a{
     text-decoration: none;
     padding-top:8px;
     padding-bottom: 8px;
@@ -663,11 +664,11 @@ w wyzszych query dac wieksze height w #full
 
 }
 
-#text_contact div p a:hover{
+#text_contact div p a:hover, #text_post div p a:hover{
     color:#ffc000;
 }
 
-#text_contact div p a::before{
+#text_contact div p a::before, #text_post div p a::before{
     content: "➝";
     /* U+279D */
 
@@ -684,11 +685,11 @@ w wyzszych query dac wieksze height w #full
     margin-top:10px;
 }
 
-#text_contact a{
+#text_contact a, #text_post a{
     text-decoration: none;
 }
 
-#text_contact div a p{
+#text_contact div a p, #text_post div a p{
     
     padding-top:8px;
     padding-bottom: 8px;
@@ -700,7 +701,7 @@ w wyzszych query dac wieksze height w #full
 
 }
 
-#text_contact .bold{
+#text_contact .bold, #text_post .bold{
     
     padding-top:8px;
     padding-bottom: 8px;
@@ -712,11 +713,11 @@ w wyzszych query dac wieksze height w #full
 
 }
 
-#text_contact div a p:hover{
+#text_contact div a p:hover, #text_post div a p:hover{
     color:#ffc000;
 }
 
-#text_contact div a p::before{
+#text_contact div a p::before, #text_post div a p::before{
     content: "➝";
     /* U+279D */
 
@@ -775,6 +776,82 @@ w wyzszych query dac wieksze height w #full
     background-color: #656a6f;
     
 }
+
+/* -------- post -------- */
+
+#full_post{
+    height:3100px;
+    margin:0;
+    width:600px;
+    
+}
+
+
+#content_post{
+    
+    width:100%;
+    height:100%;
+    padding:5px;
+    margin:5px;
+        
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows:4% 92% 4%;
+    grid-template-areas:
+    "header "
+    "text"
+    "footer";
+}
+
+#text_post{
+    display:grid;
+    grid-template-columns:100%;
+    grid-template-rows:80% 20%;
+}
+
+#post_img{
+    width:100%;
+}
+
+#contact1 h6{
+    font-family: 'robotobold';
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0px;
+    position: relative;
+    color: #ffc000;
+    margin-top:-20px;
+}
+
+#contact1 img{
+    border:5px solid white;
+}
+
+#contact1 h4{
+    font-family: 'robotobold';
+    font-weight: normal;
+    font-size:24px;
+    color: #2d3438;
+}
+
+#contact1 .bold_span{
+    
+    
+    color:#656a6f;
+    font-family:'robotobold';
+    font-size:24px;
+
+}
+
+#block{
+    display:flex;
+    flex-direction: column;
+}
+
+#block1 img{
+    width:100%;
+}
+
 /* -------- fonts -------- */
 
 @font-face {
