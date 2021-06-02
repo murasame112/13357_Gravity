@@ -625,7 +625,7 @@ w wyzszych query dac wieksze height w #full
     letter-spacing: -1px;
 }
 
-#contact2 h2::after, #contact1 h2::after{
+#contact2 h2::after, #contact1 h2::after, #contact1 h3::after{
     content: ".";
     font-size: 36px;
     position: relative;
@@ -636,7 +636,7 @@ w wyzszych query dac wieksze height w #full
 }
 
 
-#text_contact div .secondary_gallery, #text_post div .secondary_gallery{
+#text_contact div .secondary_gallery, #text_post div .secondary_gallery, #text_styles div .secondary_gallery{
     color: #3c4a52;
     font-family: 'aleoitalic';
     font-size:24px;
@@ -644,7 +644,7 @@ w wyzszych query dac wieksze height w #full
     word-wrap: break-word;
 }
 
-#text_contact div p, #text_post div p{
+#text_contact div p, #text_post div p, #text_styles div p{
     font-family:'robotoregular';
     font-size:16px;
     line-height:24px;
@@ -652,7 +652,7 @@ w wyzszych query dac wieksze height w #full
     word-wrap: break-word;
 }
 
-#text_contact div p a, #text_post div p a{
+#text_contact div p a, #text_post div p a, #text_styles div p a{
     text-decoration: none;
     padding-top:8px;
     padding-bottom: 8px;
@@ -664,11 +664,11 @@ w wyzszych query dac wieksze height w #full
 
 }
 
-#text_contact div p a:hover, #text_post div p a:hover{
+#text_contact div p a:hover, #text_post div p a:hover, #text_styles div p a:hover{
     color:#ffc000;
 }
 
-#text_contact div p a::before, #text_post div p a::before{
+#text_contact div p a::before, #text_post div p a::before, #text_styles div p a::before{
     content: "➝";
     /* U+279D */
 
@@ -685,11 +685,11 @@ w wyzszych query dac wieksze height w #full
     margin-top:10px;
 }
 
-#text_contact a, #text_post a{
+#text_contact a, #text_post a, #text_styles a{
     text-decoration: none;
 }
 
-#text_contact div a p, #text_post div a p{
+#text_contact div a p, #text_post div a p,  #text_styles div a p{
     
     padding-top:8px;
     padding-bottom: 8px;
@@ -701,7 +701,7 @@ w wyzszych query dac wieksze height w #full
 
 }
 
-#text_contact .bold, #text_post .bold{
+#text_contact .bold, #text_post .bold, #text_styles .bold{
     
     padding-top:8px;
     padding-bottom: 8px;
@@ -713,11 +713,11 @@ w wyzszych query dac wieksze height w #full
 
 }
 
-#text_contact div a p:hover, #text_post div a p:hover{
+#text_contact div a p:hover, #text_post div a p:hover, #text_styles div a p:hover{
     color:#ffc000;
 }
 
-#text_contact div a p::before, #text_post div a p::before{
+#text_contact div a p::before, #text_post div a p::before, #text_styles div a p::before{
     content: "➝";
     /* U+279D */
 
@@ -850,6 +850,60 @@ w wyzszych query dac wieksze height w #full
 
 #block1 img{
     width:100%;
+}
+
+/* -------- styles -------- */
+
+#full_styles{
+    height:1700px;
+    margin:0;
+    width:600px;
+    
+}
+
+
+#content_styles{
+    
+    width:100%;
+    height:100%;
+    padding:5px;
+    margin:5px;
+        
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows:6% 88% 6%;
+    grid-template-areas:
+    "header "
+    "text"
+    "footer";
+}
+
+#text_styles{
+    display:grid;
+    grid-template-columns:100%;
+    grid-template-rows:65% 35%;
+}
+
+#yellow{
+    color:#ffc000;
+}
+
+#contact1 h3{
+    font-family:'robotobold';
+    font-size:28px;
+    font-weight: normal;
+    line-height: 100%;
+    color: #2d3438;
+    letter-spacing: -1px;
+}
+
+#contact1 h5{
+    font-family:'robotobold';
+    font-size:24px;
+    font-weight: normal;
+    line-height: 100%;
+    color: #2d3438;
+    letter-spacing: -1px;
 }
 
 /* -------- fonts -------- */
