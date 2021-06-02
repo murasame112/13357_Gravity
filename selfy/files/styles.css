@@ -925,7 +925,7 @@ w wyzszych query dac wieksze height w #full
 
 .lightbox{
     background-color: rgba(0, 0, 0, 0.6);
-    position: absolute;
+    position: fixed;
     top: 0;
     right:0;
     bottom:0px;
@@ -935,8 +935,13 @@ w wyzszych query dac wieksze height w #full
     align-items:center;
 }
 
+
 .visible{
     display:flex;
+}
+
+.of_none{
+    overflow:hidden;
 }
 
 #lightbox-image{
