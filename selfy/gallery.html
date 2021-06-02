@@ -42,12 +42,12 @@
                         <p><a href="styles.html">See full styles</a></p>
                     </div>
                     <div id="gallery_picture_first">
-                        <img src="files/m1.jpg" alt="picture">
-                        <img src="files/m2.jpg" alt="picture">
-                        <img src="files/m3.jpg" alt="picture">
-                        <img src="files/m4.jpg" alt="picture">
-                        <img src="files/m5.jpg" alt="picture">
-                        <img src="files/m6.jpg" alt="picture">
+                        <img src="files/m1.jpg" alt="picture" id="img1" class="pic">
+                        <img src="files/m2.jpg" alt="picture" class="pic">
+                        <img src="files/m3.jpg" alt="picture" class="pic">
+                        <img src="files/m4.jpg" alt="picture" class="pic">
+                        <img src="files/m5.jpg" alt="picture" class="pic">
+                        <img src="files/m6.jpg" alt="picture" class="pic">
                     </div>
 
                 </div>
@@ -97,5 +97,27 @@
         </div>
 
     </div>
+       
+    <div class="lightbox">
+        <img alt="" srcset="" id="lightbox-image">
+    </div>
+
+    <script type="text/javascript" >
+
+
+
+
+
+document.querySelectorAll('.pic').forEach(item => {item.addEventListener('click', event => {
+    
+    const lightbox = document.querySelector('.lightbox');
+    const lightboxImage = document.querySelector('#lightbox-image');
+    lightbox.classList.add('visible');
+    lightboxImage.src= item.src;
+
+  })
+});
+
+    </script>
 </body>
 </html>

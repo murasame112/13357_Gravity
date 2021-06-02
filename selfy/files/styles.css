@@ -404,6 +404,12 @@ w wyzszych query dac wieksze height w #full
     width:100%;
     border:5px solid white;
     margin-top:15px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#text_gallery img:hover{
+    opacity:0.6;
+    
 }
 
 #text_gallery div h2{
@@ -913,6 +919,28 @@ w wyzszych query dac wieksze height w #full
 
 #styles_side_img{
     width:100%;
+}
+
+/* -------- lightbox -------- */
+
+.lightbox{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    right:0;
+    bottom:0px;
+    left:0;
+    display:none;
+    justify-content: center;
+    align-items:center;
+}
+
+.visible{
+    display:flex;
+}
+
+#lightbox-image{
+    max-width:70vw;
 }
 
 /* -------- fonts -------- */
