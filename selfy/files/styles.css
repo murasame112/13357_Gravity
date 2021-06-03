@@ -1,8 +1,7 @@
 /*http://make-lemonade.co/themes/selfy/index.html
 
 popoprawiać fonty miedzy queries
-post.h
-w wyzszych query dac wieksze height w #full
+
 
  */
 
@@ -928,7 +927,7 @@ w wyzszych query dac wieksze height w #full
     position: fixed;
     top: 0;
     right:0;
-    bottom:0px;
+    bottom:0;
     left:0;
     display:none;
     justify-content: center;
@@ -944,8 +943,57 @@ w wyzszych query dac wieksze height w #full
     overflow:hidden;
 }
 
+.left_inner_lightbox{
+    position: fixed;
+    top: 47%;
+    right:0;
+    bottom:0;
+    left:16%;
+    width: 7%;
+    height: 5%;
+    cursor: pointer;
+    text-decoration: none;
+    background-image: url('left_arrow.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    z-index: 100;
+}
+
+.right_inner_lightbox{
+    position: fixed;
+    top: 47%;
+    right:0;
+    bottom:0;
+    left:77%;
+    width: 7%;
+    height: 5%;
+    cursor: pointer;
+    text-decoration: none;
+    background-image:url('right_arrow.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    z-index: 100;
+}
+
+.cross{
+    position: fixed;
+    top: 35%;
+    right:0;
+    bottom:0;
+    left:78%;
+    width: 7%;
+    height: 5%;
+    cursor: pointer;
+    text-decoration: none;
+    background-image:url('cross.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    z-index: 100;
+}
+
 #lightbox-image{
     max-width:70vw;
+    border:5px solid white;
 }
 
 /* -------- fonts -------- */

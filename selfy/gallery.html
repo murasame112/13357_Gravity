@@ -42,12 +42,12 @@
                         <p><a href="styles.html">See full styles</a></p>
                     </div>
                     <div id="gallery_picture_first">
-                        <img src="files/m1.jpg" alt="picture" class="pic">
-                        <img src="files/m2.jpg" alt="picture" class="pic">
-                        <img src="files/m3.jpg" alt="picture" class="pic">
-                        <img src="files/m4.jpg" alt="picture" class="pic">
-                        <img src="files/m5.jpg" alt="picture" class="pic">
-                        <img src="files/m6.jpg" alt="picture" class="pic">
+                        <img src="files/m1.jpg" alt="picture" class="pic" id="img1">
+                        <img src="files/m2.jpg" alt="picture" class="pic" id="img2">
+                        <img src="files/m3.jpg" alt="picture" class="pic" id="img3">
+                        <img src="files/m4.jpg" alt="picture" class="pic" id="img4">
+                        <img src="files/m5.jpg" alt="picture" class="pic" id="img5">
+                        <img src="files/m6.jpg" alt="picture" class="pic" id="img6">
                     </div>
 
                 </div>
@@ -59,9 +59,9 @@
                         <p>Donec id elilit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare semonec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.</p>
                     </div>
                     <div id="gallery_picture_second">
-                        <img id="p1" src="files/m7.jpg" alt="picture" class="pic">
-                        <img id="p2" src="files/m1.jpg" alt="picture" class="pic">
-                        <img id="p3" src="files/m3.jpg" alt="picture" class="pic">
+                        <img src="files/m7.jpg" alt="picture" class="pic" id="img7">
+                        <img src="files/m1.jpg" alt="picture" class="pic" id="img8">
+                        <img src="files/m3.jpg" alt="picture" class="pic" id="img9">
                     </div>
                 </div>
                 
@@ -72,8 +72,8 @@
                         <p>Blonec id elilit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel auguus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
                     </div>
                     <div id="gallery_picture_third">
-                        <img src="files/m2.jpg" alt="picture" class="pic">
-                        <img src="files/m6.jpg" alt="picture" class="pic">
+                        <img src="files/m2.jpg" alt="picture" class="pic" id="img10">
+                        <img src="files/m6.jpg" alt="picture" class="pic" id="img11">
                     </div>
                 </div>
             </div>
@@ -100,25 +100,69 @@
     
   
     <div class="lightbox">
-        <img alt="" srcset="" id="lightbox-image">
+        <div id="inner_lightbox">
+            <img alt="" srcset="" id="lightbox-image">
+        </div>
+        <div class="left_inner_lightbox"></div>
+        <div class="right_inner_lightbox"></div>
+        <div class="cross"></div>
     </div>
  
     <script type="text/javascript" >
 
-
+    const left = document.querySelector('.left_inner_lightbox');
+    const right = document.querySelector('.right_inner_lightbox');
+    const cross = document.querySelector('.cross');
 
     const bd = document.querySelector('body');
-
+    var buforId;
     document.querySelectorAll('.pic').forEach(item => {item.addEventListener('click', event => {
     
-    const lightbox = document.querySelector('.lightbox');
-    const lightboxImage = document.querySelector('#lightbox-image');
-    lightbox.classList.add('visible');
-    lightboxImage.src= item.src;
-    bd.classList.add('of_none');
+        const lightbox = document.querySelector('.lightbox');
+        const lightboxImage = document.querySelector('#lightbox-image');
+        lightbox.classList.add('visible');
+        lightboxImage.src= item.src;
+        bd.classList.add('of_none');
+        buforId = item.id;
+        
+        buforId = buforId.slice(3,4);
+        
+    })
+    });
 
-  })
-});
+    left.addEventListener('click', () => prevPic());
+    right.addEventListener('click', () => nextPic());
+    cross.addEventListener('click', () => closePic());
+
+    function prevPic(){
+        const lightboxImage = document.querySelector('#lightbox-image');
+        buforId=parseInt(buforId,10);
+        
+        if(buforId>1){
+            buforId-=1; 
+            var myImg = document.querySelector('#img'+buforId);
+            lightboxImage.src=myImg.src;
+        }
+    }
+
+    function nextPic(){
+        const lightboxImage = document.querySelector('#lightbox-image');
+        buforId=parseInt(buforId,10);
+        
+        if(buforId<11){
+            buforId+=1; 
+            
+            var myImg = document.querySelector('#img'+buforId);
+            lightboxImage.src=myImg.src;
+            
+        }
+    }
+
+    function closePic(){
+        const lightbox = document.querySelector('.lightbox');
+        lightbox.classList.remove('visible');
+    }
+
 
     </script>
 </body>

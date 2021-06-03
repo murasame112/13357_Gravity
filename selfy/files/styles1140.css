@@ -141,26 +141,26 @@
     grid-template-columns:50% 50%;
     grid-template-rows: 50% 50%;
     grid-template-areas: 
-    "p1 p1"
-    "p2 p3";
+    "img7 img7"
+    "img8 img9";
 }
 
-#text_gallery #gallery_picture_second #p1{
-    grid-area: p1;
+#text_gallery #gallery_picture_second #img7{
+    grid-area: img7;
    height:100%;
    width:95%;
    
 }
 
-#text_gallery #gallery_picture_second #p2{
-    grid-area:p2;
+#text_gallery #gallery_picture_second #img8{
+    grid-area:img8;
     height:80%;
     margin-top:15px;
     width:90%;
 }
 
-#text_gallery #gallery_picture_second #p3{
-    grid-area:p3;
+#text_gallery #gallery_picture_second #img9{
+    grid-area:img9;
     height:80%;
     margin-top:15px;
     width:90%;
@@ -315,3 +315,25 @@
     margin-bottom:20px;
 }
 
+
+/* -------- lightbox -------- */
+
+.right_inner_lightbox, .left_inner_lightbox{
+    width: 2.5%;
+    height:5%;
+    top: 48%;
+}
+
+.right_inner_lightbox{
+    left:77.5%;
+}
+
+.left_inner_lightbox{
+    left:20%;
+}
+
+.cross{
+    width: 2.5%;
+    height:5%;
+    top: 13%;
+}
