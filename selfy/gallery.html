@@ -125,7 +125,7 @@
         bd.classList.add('of_none');
         buforId = item.id;
         
-        buforId = buforId.slice(3,4);
+        buforId = buforId.slice(3,5);
         
     })
     });
@@ -148,13 +148,13 @@
     function nextPic(){
         const lightboxImage = document.querySelector('#lightbox-image');
         buforId=parseInt(buforId,10);
-        
+        console.log(buforId);
         if(buforId<11){
             buforId+=1; 
-            
+            console.log(buforId);
             var myImg = document.querySelector('#img'+buforId);
             lightboxImage.src=myImg.src;
-            
+            console.log(myImg.src);
         }
     }
 
