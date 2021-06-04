@@ -82,6 +82,7 @@ popoprawiać fonty miedzy queries
 #menu a:hover{
     background-color: #656a6f;
     color: #fff;
+    
 }
 
 #menu a,  #text a, .small_art a, #footer a{
@@ -104,6 +105,7 @@ popoprawiać fonty miedzy queries
 
 #text a:hover{
     color:#ffc000;
+    
 }
 
 #text{
@@ -359,7 +361,6 @@ popoprawiać fonty miedzy queries
 
 #full_gallery{
     height:5600px;
-    /* 2900 */
     margin:0;
     width:600px;
     
@@ -404,11 +405,12 @@ popoprawiać fonty miedzy queries
     border:5px solid white;
     margin-top:15px;
     transition: opacity 0.3s ease-in-out;
+    
 }
 
 #text_gallery img:hover{
     opacity:0.6;
-    
+    cursor:pointer;
 }
 
 #text_gallery div h2{
@@ -516,11 +518,11 @@ popoprawiać fonty miedzy queries
 
 .small_text_gallery a{
     text-decoration: none;
-
 }
 
 #text_gallery .small_text_gallery h2:hover{
     color: #ffc000;
+    
 }
 
 
@@ -918,6 +920,13 @@ popoprawiać fonty miedzy queries
 
 #styles_side_img{
     width:100%;
+    border:5px solid white;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#styles_side_img:hover{
+    opacity:0.6;
+    cursor:pointer;
 }
 
 /* -------- lightbox -------- */
